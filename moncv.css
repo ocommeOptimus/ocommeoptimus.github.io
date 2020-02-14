@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'aileronregular';
+    src: url('fonts/Aileron-Regular-webfont.eot');
+    src: url('fonts/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Aileron-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Aileron-Regular-webfont.woff') format('woff'),
+         url('fonts/Aileron-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aileronlight';
+    src: url('fonts/Aileron-Light-webfont.eot');
+    src: url('fonts/Aileron-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Aileron-Light-webfont.woff2') format('woff2'),
+         url('fonts/Aileron-Light-webfont.woff') format('woff'),
+         url('fonts/Aileron-Light-webfont.ttf') format('truetype'),
+         url('fonts/Aileron-Light-webfont.svg#aileronlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aileronultralight';
+    src: url('fonts/Aileron-UltraLight-webfont.eot');
+    src: url('fonts/Aileron-UltraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Aileron-UltraLight-webfont.woff2') format('woff2'),
+         url('fonts/Aileron-UltraLight-webfont.woff') format('woff'),
+         url('fonts/Aileron-UltraLight-webfont.ttf') format('truetype'),
+         url('fonts/Aileron-UltraLight-webfont.svg#aileronultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    font-family: 'aileronregular', Arial, Helvetica, sans-serif;
+}
+
+body{
+    border: 2px #c4c4c4 solid;
+    width: 1190px;
+    margin: auto;
+    display: flex;
+}
+p{
+    color: #424242;
+}
+
+/* Contenu, avec la photo de profil, sur fond jaune qui s'étale à la verticale sur la gauche */
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 32.5%;
+    background-color: #ffcf00;
+}
+#photo{
+    display: flex;
+    padding: 65px 80px 40px 80px;
+}
+aside img{
+    display: block;
+    max-width: 220px;
+    border: 3px #dfb300 solid;
+    border-radius: 100%;
+    margin: auto;
+}
+aside h2{
+    font-family: 'aileronlight';    
+    margin: 0px;
+    font-size: 29px;
+    color: #ffcf00;
+    text-align: center;
+    padding: 7px 0px;;
+    background-color: #424242;
+}
+#about{
+    font-family: 'aileronregular';
+}
+.aside_bloc:nth-child(3){
+    flex: 2;
+    text-align: justify;
+}
+.aside_bloc:nth-child(4){
+    text-align: center;
+}
+.aside_bloc p{
+    padding: 20px 45px 40px 45px;
+}
+#hobbies{
+    display: flex;
+    padding: 30px 45px 40px 45px;
+}
+#hobbies img{
+    max-width: 65px;
+    margin: 0px 15px;
+    border: 2px #424242 solid;
+    border-radius: 100%;
+}
+
+/* Contenu avec le titre, la formation, les expériences professionnelles et les recommandations */
+
+#content{
+    width: 60%;
+    margin-left: 65px;
+    margin-right: 45px;
+}
+#entete{
+    margin: 120px 0px 130px 0px;
+}
+h1{
+    font-family: 'aileronultralight';
+    font-size: 63px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+h1+p{
+    font-size: 31px;
+    margin: 15px 0px;
+}
+#title_color{
+    font-family: 'aileronlight';
+    font-weight: bolder;
+    color: #ffcf00;
+}
+#title_border{
+    border-bottom: 2px #ffcf00 solid;
+}
+#content h2{
+    font-size: 31px;
+    padding-bottom: 20px;
+    margin: 0px 0px 45px 0px;
+    border-bottom: 2px #ffcf00 solid;
+}
+h2 i{
+    color: #ffcf00;
+    margin-right: 40px;
+}
+
+#content h3, h4{
+    color: #424242;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+.conteneur{
+    padding-bottom: 45px;
+}
+.conteneur, .period{
+    display: flex;
+    justify-content: space-between;
+}
+.period i{
+    font-size: 13px;
+    color: #ffcf00;
+    margin-right: 15px;
+}
+i[class*="far"]{
+    font-size: 19px;
+}
+.period p, h3{
+    margin: 0px;
+}
+.description{
+    width: 65%;
+}
+.description h3{
+    font-family: 'aileronlight';
+    font-size: 23px;
+}
+.description h4{
+    font-family: 'aileronlight';
+    font-size: 17px;
+    font-weight: lighter;
+}
+.description p{
+    font-family: 'aileronlight';
+    font-weight: lighter;
+}
+.reco{
+    width: 45%;
+    line-height: 1.5rem;
+}
+.reco h3{
+    font-size: 17px;
+    font-weight: lighter;
+}
+.reco .email{
+    font-family: 'aileronultralight';
+}
+/* Media Queries pour un style responsive */
+@media (max-width: 1190px){
+    body{
+        border: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+    }
+    .aside_bloc:nth-child(3){
+        display: none;
+    }
+    .aside_bloc:nth-child(4){
+        display: none;
+    }
+    #content{
+        width: 90%;
+        margin: 0px 20px;
+        font-size: 75%;
+    }
+    #entete{
+        margin: 30px auto;
+        text-align: center;
+    }
+    h1{
+        font-size: 31px;
+    }
+    h1+p{
+        font-size: 15px;
+    }
+    #content{
+        margin: 0px;
+        padding: 0px 20px;
+    }
+    #content h2{
+        text-align: center;
+        font-size: 23px;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        margin-bottom: 15px;
+        border-top: 2px #ffcf00 solid;
+        border-bottom: none;
+    }
+    h2 .fas{
+        display: none;
+    }
+    .description h3{
+        font-size: 17px;
+    }
+    .description h4{
+        font-size: 15px;
+    }
+}
