@@ -41,7 +41,6 @@
 
 body{
     border: 2px #c4c4c4 solid;
-    width: 1190px;
     margin: auto;
     display: flex;
 }
@@ -93,13 +92,30 @@ aside h2{
 }
 #hobbies{
     display: flex;
+    justify-content: center;
     padding: 30px 45px 40px 45px;
 }
-#hobbies img{
-    max-width: 65px;
+.hobbies_pic{
+    width: 65px;
+    height: 65px;
     margin: 0px 15px;
     border: 2px #424242 solid;
     border-radius: 100%;
+    overflow: hidden;
+}
+.hobbies_pic img{
+    margin: 11px auto 0px auto;
+    border: none;
+    border-radius: 0%;
+}
+#swim{
+    width: 95%;
+}
+#bike{
+    width: 71%;
+}
+#ping{
+    width: 90%;
 }
 
 /* Contenu avec le titre, la formation, les expériences professionnelles et les recommandations */
@@ -109,7 +125,7 @@ aside h2{
     margin-left: 65px;
     margin-right: 45px;
 }
-#entete{
+#title{
     margin: 120px 0px 130px 0px;
 }
 h1{
@@ -148,10 +164,10 @@ section{
     display: flex;
     flex-direction: column;
 }
-.conteneur{
+.container{
     padding-bottom: 45px;
 }
-.conteneur, .period{
+.container, .period{
     display: flex;
     justify-content: space-between;
 }
@@ -196,6 +212,7 @@ i[class*="far"]{
 /* Media Queries pour un style responsive */
 @media (max-width: 1190px){
     body{
+        margin-top: 240px;
         border: none;
         width: 100%;
         display: flex;
@@ -212,22 +229,22 @@ i[class*="far"]{
     }
     #content{
         width: 90%;
-        margin: 0px 20px;
+        margin: 0px auto;
         font-size: 75%;
     }
-    #entete{
-        margin: 30px auto;
+    #title{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 15px auto 0px auto;
         text-align: center;
     }
     h1{
-        font-size: 31px;
+        font-size: 45px;
     }
     h1+p{
-        font-size: 15px;
-    }
-    #content{
-        margin: 0px;
-        padding: 0px 20px;
+        font-size: 19px;
     }
     #content h2{
         text-align: center;
@@ -236,7 +253,13 @@ i[class*="far"]{
         padding-top: 15px;
         margin-bottom: 15px;
         border-top: 2px #ffcf00 solid;
-        border-bottom: none;
+        border-bottom: 2px #ffcf00 solid;
+    }
+    #content #formation{
+        border-top: none;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 2px #ffcf00 solid;
     }
     h2 .fas{
         display: none;
