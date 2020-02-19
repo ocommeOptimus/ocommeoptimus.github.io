@@ -40,12 +40,16 @@
 }
 
 body{
+    max-width: 1190px;
     border: 2px #c4c4c4 solid;
     margin: auto;
     display: flex;
 }
 p{
     color: #424242;
+}
+q{
+    font-style: italic;
 }
 
 /* Contenu, avec la photo de profil, sur fond jaune qui s'étale à la verticale sur la gauche */
@@ -248,7 +252,7 @@ i[class*="far"]{
     }
     #content h2{
         text-align: center;
-        font-size: 23px;
+        font-size: 29px;
         padding-bottom: 20px;
         padding-top: 15px;
         margin-bottom: 15px;
