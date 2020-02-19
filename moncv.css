@@ -171,20 +171,29 @@ section{
 .container{
     padding-bottom: 45px;
 }
-.container, .period{
+.container{
     display: flex;
     justify-content: space-between;
+}
+.period{
+    display: flex;
+    justify-content: flex-start;
 }
 .period i{
     font-size: 13px;
     color: #ffcf00;
     margin-right: 15px;
+    padding: 4px;
 }
 i[class*="far"]{
     font-size: 19px;
+    padding: 0;
 }
 .period p, h3{
     margin: 0px;
+}
+.period{
+    width: 30%;
 }
 .description{
     width: 65%;
