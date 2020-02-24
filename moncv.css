@@ -94,6 +94,13 @@ aside h2{
 .aside_bloc p{
     padding: 20px 45px 40px 45px;
 }
+.aside_bloc a{
+    color: #F57F17;
+    text-decoration: none;
+}
+.aside_bloc a:hover{
+    color: #b71c1c;
+}
 #hobbies{
     display: flex;
     justify-content: center;
